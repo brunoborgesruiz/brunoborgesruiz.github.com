@@ -21,7 +21,24 @@
 <body>
 	<h1>Bruno Ruiz</h1>
 	<p>
-		<span>Nome Completo:</span> Bruno Borges Ruiz</p>
+		<span>Nome Completo:</span> Bruno Borges Ruiz
+		<br>
+		<span>Nascimento:</span> 05 de janeiro de 1990
+		<br>
+		<span>Idade: </span><span style="font-weight: 100"></span> anos
+		<br>
+		<span>Residência:</span> Boituva, São Paulo - Brasil
+		<br>
+		<span>Ocupação:</span> Especificação, desenvolvimento e manutenção de soluções baseadas em software.
+		<br>
+
+	</p>
+	<script>
+		function minhaIdade(){
+			return new Date().getFullYear() - 1990;
+		}
+		document.querySelectorAll('span')[3].innerHTML=minhaIdade();
+	</script>
 </body>
 
 </html>
